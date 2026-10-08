@@ -1,0 +1,23 @@
+body.proj{font-size:clamp(16px,1.9vw,30px);overflow-x:hidden}
+.pc{min-height:100vh;padding:2.2vh 3vw;display:flex;flex-direction:column;gap:1.6vh;position:relative}
+.pc .top{display:flex;justify-content:space-between;align-items:center;gap:2vw;color:var(--muted);font-weight:800;font-size:.7em}
+.pc .stg{display:inline-flex;align-items:center;gap:.5em;background:var(--lilac-2);color:#44316b;border-radius:999px;padding:.2em .9em;font-weight:900}
+.pc .big{font-size:2.1em;font-weight:900;line-height:1.15}
+.pc .q{font-size:1.5em;font-weight:800;line-height:1.35;background:#fff;border-radius:28px;padding:.7em 1em;box-shadow:var(--sh)}
+.pc .row2{display:grid;grid-template-columns:1fr 1fr;gap:1.4vw}
+.pc .optp{display:flex;gap:.7em;align-items:center;background:#fff;border:2px solid var(--lilac-1);border-radius:22px;padding:.5em .9em;font-weight:700}
+.pc .optp b{background:var(--lilac-2);border-radius:50%;min-width:1.7em;height:1.7em;display:grid;place-items:center}
+.pc .optp.good{background:var(--mint-1);border-color:var(--mint-3)}
+.pc .optp.good b{background:var(--mint-2)}
+.pc .box{background:var(--butter-1);border-radius:24px;padding:.7em 1em;box-shadow:var(--sh2)}
+.pc .box h4{margin:0 0 .2em;color:var(--warn)}
+.pc .tm{display:flex;justify-content:center}.pc .timer{font-size:2.6em}
+.pc .code{font-size:3em;font-weight:900;letter-spacing:.08em;background:var(--butter-2);border-radius:24px;padding:.1em .5em;display:inline-block}
+.pc .qr{width:min(26vh,260px);background:#fff;border-radius:20px;padding:10px;box-shadow:var(--sh)}
+.pc .tcard{border-radius:26px;padding:.7em 1em;box-shadow:var(--sh2);font-weight:800}
+.pc .lb{display:grid;grid-template-columns:2.2em 1fr auto;gap:1em;align-items:center;background:#fff;border-radius:24px;padding:.5em 1em;box-shadow:var(--sh2)}
+.pc .lb .rk{font-size:1.4em;font-weight:900;color:var(--lilac-4)}.pc .lb .sc{font-size:1.5em;font-weight:900}
+.pc .stk{position:absolute;right:2vw;bottom:2vh;opacity:.95;pointer-events:none}
+.pc .float{animation:fl 3s ease-in-out infinite}@keyframes fl{50%{transform:translateY(-10px)}}
+.pc .tag{display:inline-block;border-radius:999px;padding:.1em .8em;font-weight:900;font-size:.8em}
+.pc .tag.ok{background:var(--mint-2)}.pc .tag.no{background:var(--rose-1)}.pc .tag.mid{background:var(--butter-2)}.pc .tag.wait{background:var(--lilac-1)}

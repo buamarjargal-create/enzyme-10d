@@ -1,0 +1,23 @@
+# Render.com — Starter (~$7/сар) + Disk: хэзээ ч унтахгүй, өгөгдөл хадгалагдана.
+# Ашиглахдаа энэ файлын нэрийг render.yaml болгож солино.
+services:
+  - type: web
+    name: enzyme-10d
+    runtime: node
+    plan: starter
+    buildCommand: "echo no build"
+    startCommand: node server.js
+    healthCheckPath: /api/public
+    disk:
+      name: enzyme-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: NO_TUNNEL
+        value: "1"
+      - key: TEACHER_PASSWORD
+        sync: false
+      - key: SITE_URL
+        sync: false

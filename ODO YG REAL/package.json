@@ -1,0 +1,10 @@
+{
+  "name": "enzyme-10d-classroom",
+  "version": "3.0.0",
+  "private": true,
+  "description": "ENZYME — Grade 10D Biology real-time classroom platform (no external dependencies)",
+  "main": "server.js",
+  "scripts": { "start": "node server.js", "test": "node test/qa.js" },
+  "engines": { "node": ">=18" },
+  "dependencies": {}
+}

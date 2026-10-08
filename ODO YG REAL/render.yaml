@@ -1,0 +1,16 @@
+# Render.com — ҮНЭГҮЙ (Free) хувилбар. Сайт 15 минут ашиглагдаагүй бол унтарч, дараагийн орох үед ~1 минут сэрдэг.
+services:
+  - type: web
+    name: enzyme-10d
+    runtime: node
+    plan: free
+    buildCommand: "echo no build"
+    startCommand: node server.js
+    healthCheckPath: /api/public
+    envVars:
+      - key: NO_TUNNEL
+        value: "1"
+      - key: TEACHER_PASSWORD
+        sync: false
+      - key: SITE_URL
+        sync: false

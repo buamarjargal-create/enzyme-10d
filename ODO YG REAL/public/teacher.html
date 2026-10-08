@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="mn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="index,follow">
+<meta name="description" content="AmarjargalBuyanbaatar — Б.Амаржаргал багшийн ENZYME биологийн хичээлийн удирдлагын нэвтрэлт.">
+<link rel="canonical" href="__SITE_URL__/teacher">
+<title>AmarjargalBuyanbaatar — Багшийн нэвтрэлт · ENZYME</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap&subset=cyrillic" rel="stylesheet">
+<link rel="stylesheet" href="/theme.css">
+<link rel="stylesheet" href="/teacher.css">
+</head>
+<body>
+<div id="login" class="loginwrap hide">
+  <form id="loginForm" class="card loginbox" autocomplete="on">
+    <img class="sticker lg1 float" src="/img/lab.png" width="92" alt="">
+    <img class="sticker lg2 float d2" src="/img/strawberry.png" width="62" alt="">
+    <div class="brand"><span data-dna="34"></span><span>ENZYME</span></div>
+    <h1 class="lhead">Багшийн нэвтрэлт</h1>
+    <p class="muted small lsub">Ангийн бодит цагийн сорилтын удирдлага</p>
+    <label for="lu">Нэвтрэх нэр</label><input id="lu" type="text" autocomplete="username" autocapitalize="off" spellcheck="false" required>
+    <label for="lp">Нууц үг</label><input id="lp" type="password" autocomplete="current-password" required>
+    <p id="lerr" class="err hide" role="alert"></p>
+    <button class="btn primary wide lg" type="submit" id="lbtn">Нэвтрэх</button>
+    <p class="small muted lhelp">Нууц үгээ хэнд ч бүү хэлээрэй.</p>
+  </form>
+</div>
+<div id="app" class="hide">
+  <div id="conn" class="conn hide" role="status">Холболт тасарлаа. Дахин холбогдож байна…</div>
+  <div id="mbar" class="mbar"></div>
+  <aside id="side" class="side" aria-label="Цэс"></aside>
+  <div id="shell" class="shell">
+    <header id="hdr" class="thead"></header>
+    <nav id="path" class="spath" aria-label="Сорилтын алхмууд"></nav>
+    <main id="main" class="tmain"></main>
+  </div>
+  <button id="chatFab" class="chatfab" type="button" aria-label="Багийн чат"></button>
+  <aside id="drawer" class="drawer hide" aria-label="Багийн чат"></aside>
+</div>
+<div id="modal" class="modal hide" role="dialog" aria-modal="true"><div class="mbox" id="mbox"></div></div>
+<script src="/common.js"></script>
+<script src="/teacher.js"></script>
+</body>
+</html>
